@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="jpArray" />
+    <string-array name="statusNikahArray" />
+    <string-array name="jenisKelaminArray" />
+    <string-array name="statusPernikahanArray" />
+</resources>
