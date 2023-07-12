@@ -1,49 +1,88 @@
 package com.arjunbagaskara.login;
 
-public class ForexRatesModel
-{
-    private double IDR,ILS, IMP, USD, IQD, IRR, ISK, JEP, JMD, JOD;
+public class ForexRatesModel {
+
+    private double AUD, BND, BTC, EUR, GBP, HKD, IDR, INR, JPY, MYR;
 
     public ForexRatesModel() {}
 
-    public double getIDR() { return IDR; }
+    public double getAUD() {
+        return AUD;
+    }
 
-    public void setIDR(double IDR) { this.IDR = IDR; }
+    public void setAUD(double AUD) {
+        this.AUD = AUD;
+    }
 
-    public double getILS() { return ILS; }
+    public double getBND() {
+        return BND;
+    }
 
-    public void setILS(double ILS) { this.ILS = ILS; }
+    public void setBND(double BND) {
+        this.BND = BND;
+    }
 
-    public double getIMP() { return IMP; }
+    public double getBTC() {
+        return BTC;
+    }
 
-    public void setIMP(double IMP) { this.IMP = IMP; }
+    public void setBTC(double BTC) {
+        this.BTC = BTC;
+    }
 
-    public double getUSD() { return USD; }
+    public double getEUR() {
+        return EUR;
+    }
 
-    public void setUSD(double USD) { this.USD = USD; }
+    public void setEUR(double EUR) {
+        this.EUR = EUR;
+    }
 
-    public double getIQD() { return IQD; }
+    public double getGBP() {
+        return GBP;
+    }
 
-    public void setIQD(double IQD) { this.IQD = IQD; }
+    public void setGBP(double GBP) {
+        this.GBP = GBP;
+    }
 
-    public double getIRR() { return IRR; }
+    public double getHKD() {
+        return HKD;
+    }
 
-    public void setIRR(double IRR) { this.IRR = IRR; }
+    public void setHKD(double HKD) {
+        this.HKD = HKD;
+    }
 
-    public double getISK() { return ISK; }
+    public double getIDR() {
+        return IDR;
+    }
 
-    public void setISK(double ISK) { this.ISK = ISK; }
+    public void setIDR(double IDR) {
+        this.IDR = IDR;
+    }
 
-    public double getJEP() { return JEP; }
+    public double getINR() {
+        return INR;
+    }
 
-    public void setJEP(double JEP) { this.JEP = JEP; }
+    public void setINR(double INR) {
+        this.INR = INR;
+    }
 
-    public double getJMD() { return JMD; }
+    public double getJPY() {
+        return JPY;
+    }
 
-    public void setJMD(double JMD) { this.JMD = JMD; }
+    public void setJPY(double JPY) {
+        this.JPY = JPY;
+    }
 
-    public double getJOD() { return JOD; }
+    public double getMYR() {
+        return MYR;
+    }
 
-    public void setJOD(double JOD) { this.JOD = JOD; }
-
+    public void setMYR(double MYR) {
+        this.MYR = MYR;
+    }
 }

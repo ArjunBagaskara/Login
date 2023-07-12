@@ -19,8 +19,7 @@ import cz.msebera.android.httpclient.Header;
 public class ForexMainActivity extends AppCompatActivity {
     private ProgressBar loadingProgressBar;
     private SwipeRefreshLayout swipeRefreshLayout1;
-    private TextView idrTextView, ilsTextView, impTextView, usdTextView, iqdTextView, irrTextView, iskTextView, jepTextView, jmdTextView, jodTextView;
-
+    private TextView audTextView, bndTextView, btcTextView, eurTextView, gbpTextView, hkdTextView, inrTextView, jpyTextView, myrTextView, usdTextView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,16 +27,16 @@ public class ForexMainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_forex_main);
 
         swipeRefreshLayout1 = (SwipeRefreshLayout) findViewById(R.id.swipeRefreshLayout1);
-        idrTextView = (TextView) findViewById(R.id.idrTextView);
-        ilsTextView = (TextView) findViewById(R.id.ilsTextView);
-        impTextView = (TextView) findViewById(R.id.impTextView);
+        audTextView = (TextView) findViewById(R.id.audTextView);
+        bndTextView = (TextView) findViewById(R.id.bndTextView);
+        btcTextView = (TextView) findViewById(R.id.btcTextView);
+        eurTextView = (TextView) findViewById(R.id.eurTextView);
+        gbpTextView = (TextView) findViewById(R.id.gbpTextView);
+        hkdTextView = (TextView) findViewById(R.id.hkdTextView);
+        inrTextView = (TextView) findViewById(R.id.inrTextView);
+        jpyTextView = (TextView) findViewById(R.id.jpyTextView);
+        myrTextView = (TextView) findViewById(R.id.myrTextView);
         usdTextView = (TextView) findViewById(R.id.usdTextView);
-        iqdTextView = (TextView) findViewById(R.id.iqdTextView);
-        irrTextView = (TextView) findViewById(R.id.irrTextView);
-        iskTextView = (TextView) findViewById(R.id.iskTextView);
-        jepTextView = (TextView) findViewById(R.id.jepTextView);
-        jmdTextView = (TextView) findViewById(R.id.jmdTextView);
-        jodTextView = (TextView) findViewById(R.id.jodTextView);
         loadingProgressBar = (ProgressBar) findViewById(R.id.loadingProgressBar);
 
         initSwipeRefreshLayout();
@@ -63,7 +62,7 @@ public class ForexMainActivity extends AppCompatActivity {
     private void initForex() {
         loadingProgressBar.setVisibility(TextView.VISIBLE);
 
-        String url = "https://openexchangerates.org/api/latest.json?app_id=d7947806abc94b4fae6d40e007a89ac6";
+        String url = "https://openexchangerates.org/api/latest.json?app_id=e2515b0d149b418b94ba4200619ad1b6";
 
         AsyncHttpClient asyncHttpClient = new AsyncHttpClient();
         asyncHttpClient.get(url, new AsyncHttpResponseHandler() {
@@ -73,27 +72,27 @@ public class ForexMainActivity extends AppCompatActivity {
                 ForexRootModel rootModel = gson.fromJson(new String(responseBody), ForexRootModel.class);
                 ForexRatesModel ratesModel = rootModel.getRatesModel();
 
-                double ils = ratesModel.getIDR() / ratesModel.getILS();
-                double imp = ratesModel.getIDR() / ratesModel.getIMP();
-                double usd = ratesModel.getIDR() / ratesModel.getUSD();
-                double iqd = ratesModel.getIDR() / ratesModel.getIQD();
-                double irr = ratesModel.getIDR() / ratesModel.getIRR();
-                double isk = ratesModel.getIDR() / ratesModel.getISK();
-                double jep = ratesModel.getIDR() / ratesModel.getJEP();
-                double jmd = ratesModel.getIDR() / ratesModel.getJMD();
-                double jod = ratesModel.getIDR() / ratesModel.getJOD();
+                double aud = ratesModel.getIDR() / ratesModel.getAUD();
+                double bnd = ratesModel.getIDR() / ratesModel.getBND();
+                double btc = ratesModel.getIDR() / ratesModel.getBTC();
+                double eur = ratesModel.getIDR() / ratesModel.getEUR();
+                double gbp = ratesModel.getIDR() / ratesModel.getGBP();
+                double hkd = ratesModel.getIDR() / ratesModel.getHKD();
+                double inr = ratesModel.getIDR() / ratesModel.getINR();
+                double jpy = ratesModel.getIDR() / ratesModel.getJPY();
+                double myr = ratesModel.getIDR() / ratesModel.getMYR();
                 double idr = ratesModel.getIDR();
 
-                idrTextView.setText(formatNumber(idr, "###.##0.##" ));
-                ilsTextView.setText(formatNumber(ils, "###.##0.##" ));
-                impTextView.setText(formatNumber(imp, "###.##0.##" ));
-                usdTextView.setText(formatNumber(usd, "###.##0.##" ));
-                iqdTextView.setText(formatNumber(iqd, "###.##0.##" ));
-                irrTextView.setText(formatNumber(irr, "###.##0.##" ));
-                iskTextView.setText(formatNumber(isk, "###.##0.##" ));
-                jepTextView.setText(formatNumber(jep, "###.##0.##" ));
-                jmdTextView.setText(formatNumber(jmd, "###.##0.##" ));
-                jodTextView.setText(formatNumber(jod, "###.##0.##" ));
+                audTextView.setText(formatNumber(aud, "###.##0.##" ));
+                bndTextView.setText(formatNumber(bnd, "###.##0.##" ));
+                btcTextView.setText(formatNumber(btc, "###.##0.##" ));
+                eurTextView.setText(formatNumber(eur, "###.##0.##" ));
+                gbpTextView.setText(formatNumber(gbp, "###.##0.##" ));
+                hkdTextView.setText(formatNumber(hkd, "###.##0.##" ));
+                inrTextView.setText(formatNumber(inr, "###.##0.##" ));
+                jpyTextView.setText(formatNumber(jpy, "###.##0.##" ));
+                myrTextView.setText(formatNumber(myr, "###.##0.##" ));
+                usdTextView.setText(formatNumber(idr, "###.##0.##" ));
 
                 loadingProgressBar.setVisibility(TextView.INVISIBLE);
             }

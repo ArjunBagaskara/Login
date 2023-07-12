@@ -14,7 +14,7 @@
         android:background="@android:color/transparent"
         android:drawableRight="@drawable/img_dollar_128"
         android:textColor="#fff"
-        android:text="Forex "
+        android:text="Forex"
         android:id="@+id/tampilForexButton">
     </Button>
     <Button
@@ -26,6 +26,18 @@
         android:textColor="#fff"
         android:id="@+id/tampilMahasiswaButton"
         android:text="Master Mahasiswa">
+
+    </Button>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_columnWeight="1"
+        android:background="@android:color/transparent"
+        android:drawableLeft="@drawable/img_weather_lightning_128"
+        android:textColor="#fff"
+        android:id="@+id/tampilCuacaButton"
+        android:text="Cuaca">
 
     </Button>
 </GridLayout>

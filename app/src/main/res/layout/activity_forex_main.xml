@@ -2,11 +2,10 @@
 <androidx.swiperefreshlayout.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".MainActivity"
-    android:layout_height="wrap_content"
     android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
     android:id="@+id/swipeRefreshLayout1">
-
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -24,38 +23,13 @@
                 android:layout_height="wrap_content"
                 android:padding="10dp"
                 android:textColor="#fff"
-                android:text="Indonesian Rupiah"/>
+                android:text="Dollar Australia" />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:padding="10dp"
                 android:textColor="#fff"
-                android:text="IDR"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="10dp"
-                android:textColor="#fff"
-                android:text=" : " />
-            <TextView
-                android:layout_width="100dp"
-                android:layout_height="wrap_content"
-                android:gravity="right"
-                android:padding="10dp"
-                android:textColor="#fff"
-                android:id="@+id/idrTextView"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="10dp"
-                android:textColor="#fff"
-                android:text="Israeli New Sheqel"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="10dp"
-                android:textColor="#fff"
-                android:text="ILS"/>
+                android:text="AUD" />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -68,208 +42,241 @@
                 android:gravity="right"
                 android:padding="10dp"
                 android:textColor="#fff"
-                android:id="@+id/ilsTextView"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="10dp"
-                android:textColor="#fff"
-                android:text="Manx pound"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="10dp"
-                android:textColor="#fff"
-                android:text="IMP"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="10dp"
-                android:textColor="#fff"
-                android:text=" : " />
-            <TextView
-                android:layout_width="100dp"
-                android:layout_height="wrap_content"
-                android:gravity="right"
-                android:padding="10dp"
-                android:textColor="#fff"
-                android:id="@+id/impTextView"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="10dp"
-                android:textColor="#fff"
-                android:text="United States Dollar"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="10dp"
-                android:textColor="#fff"
-                android:text="USD"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="10dp"
-                android:textColor="#fff"
-                android:text=" : " />
-            <TextView
-                android:layout_width="100dp"
-                android:layout_height="wrap_content"
-                android:gravity="right"
-                android:padding="10dp"
-                android:textColor="#fff"
-                android:id="@+id/usdTextView"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="10dp"
-                android:textColor="#fff"
-                android:text="Iraqi Dinar"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="10dp"
-                android:textColor="#fff"
-                android:text="IQD"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="10dp"
-                android:textColor="#fff"
-                android:text=" : " />
-            <TextView
-                android:layout_width="100dp"
-                android:layout_height="wrap_content"
-                android:gravity="right"
-                android:padding="10dp"
-                android:textColor="#fff"
-                android:id="@+id/iqdTextView"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="10dp"
-                android:textColor="#fff"
-                android:text="Iranian Rial"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="10dp"
-                android:textColor="#fff"
-                android:text="IRR"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="10dp"
-                android:textColor="#fff"
-                android:text=" : " />
-            <TextView
-                android:layout_width="100dp"
-                android:layout_height="wrap_content"
-                android:gravity="right"
-                android:padding="10dp"
-                android:textColor="#fff"
-                android:id="@+id/irrTextView"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="10dp"
-                android:textColor="#fff"
-                android:text="Icelandic Króna"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="10dp"
-                android:textColor="#fff"
-                android:text="ISK"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="10dp"
-                android:textColor="#fff"
-                android:text=" : " />
-            <TextView
-                android:layout_width="100dp"
-                android:layout_height="wrap_content"
-                android:gravity="right"
-                android:padding="10dp"
-                android:textColor="#fff"
-                android:id="@+id/iskTextView"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="10dp"
-                android:textColor="#fff"
-                android:text="Jersey Pound"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="10dp"
-                android:textColor="#fff"
-                android:text="JEP"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="10dp"
-                android:textColor="#fff"
-                android:text=" : " />
-            <TextView
-                android:layout_width="100dp"
-                android:layout_height="wrap_content"
-                android:gravity="right"
-                android:padding="10dp"
-                android:textColor="#fff"
-                android:id="@+id/jepTextView"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="10dp"
-                android:textColor="#fff"
-                android:text="Jamaican Dollar"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="10dp"
-                android:textColor="#fff"
-                android:text="JMD"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="10dp"
-                android:textColor="#fff"
-                android:text=" : " />
-            <TextView
-                android:layout_width="100dp"
-                android:layout_height="wrap_content"
-                android:gravity="right"
-                android:padding="10dp"
-                android:textColor="#fff"
-                android:id="@+id/jmdTextView"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="10dp"
-                android:textColor="#fff"
-                android:text="Jordanian Dinar"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="10dp"
-                android:textColor="#fff"
-                android:text="JOD"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="10dp"
-                android:textColor="#fff"
-                android:text=" : " />
-            <TextView
-                android:layout_width="100dp"
-                android:layout_height="wrap_content"
-                android:gravity="right"
-                android:padding="10dp"
-                android:textColor="#fff"
-                android:id="@+id/jodTextView"/>
+                android:id="@+id/audTextView" />
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textColor="#fff"
+                android:text="Dollar Brunei" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textColor="#fff"
+                android:text="BND" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textColor="#fff"
+                android:text=" : " />
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:padding="10dp"
+                android:textColor="#fff"
+                android:id="@+id/bndTextView" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textColor="#fff"
+                android:text="Dollar HK" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textColor="#fff"
+                android:text="HKD" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textColor="#fff"
+                android:text=" : " />
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:padding="10dp"
+                android:textColor="#fff"
+                android:id="@+id/hkdTextView" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textColor="#fff"
+                android:text="Ringgit" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textColor="#fff"
+                android:text="MYR" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textColor="#fff"
+                android:text=" : " />
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:padding="10dp"
+                android:textColor="#fff"
+                android:id="@+id/myrTextView" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textColor="#fff"
+                android:text="Dollar US" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textColor="#fff"
+                android:text="USD" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textColor="#fff"
+                android:text=" : " />
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:padding="10dp"
+                android:textColor="#fff"
+                android:id="@+id/usdTextView" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textColor="#fff"
+                android:text="Bitcoin" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textColor="#fff"
+                android:text="BTC" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textColor="#fff"
+                android:text=" : " />
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:padding="10dp"
+                android:textColor="#fff"
+                android:id="@+id/btcTextView" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textColor="#fff"
+                android:text="Euro" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textColor="#fff"
+                android:text="EUR" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textColor="#fff"
+                android:text=" : " />
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:padding="10dp"
+                android:textColor="#fff"
+                android:id="@+id/eurTextView" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textColor="#fff"
+                android:text="Pound Sterling" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textColor="#fff"
+                android:text="GBP" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textColor="#fff"
+                android:text=" : " />
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:padding="10dp"
+                android:textColor="#fff"
+                android:id="@+id/gbpTextView" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textColor="#fff"
+                android:text="Rupee India" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textColor="#fff"
+                android:text="INR" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textColor="#fff"
+                android:text=" : " />
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:padding="10dp"
+                android:textColor="#fff"
+                android:id="@+id/inrTextView" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textColor="#fff"
+                android:text="Yen Jepang" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textColor="#fff"
+                android:text="JPY" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textColor="#fff"
+                android:text=" : " />
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:padding="10dp"
+                android:textColor="#fff"
+                android:id="@+id/jpyTextView" />
         </GridLayout>
         <ProgressBar
             android:layout_width="wrap_content"

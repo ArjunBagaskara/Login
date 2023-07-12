@@ -2,6 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
@@ -9,19 +10,30 @@
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
         android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
+        android:label="App Login Arjun Bagaskara"
         android:supportsRtl="true"
         android:theme="@style/Theme.Login"
         tools:targetApi="31">
         <activity
-            android:name=".ForexMainActivity"
+            android:name=".CuacaMainActivity"
+            android:label="Cuaca Pontianak"
             android:exported="false" />
         <activity
-            android:name=".TampilMahasiswaActivity"
-            android:exported="false" />
+            android:name=".ForexMainActivity"
+            android:exported="false"
+            android:label="Forex Arjun Bagaskara" />
         <activity
             android:name=".TambahMahasiswaActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:label="Tambah Mahasiswa" />
+        <activity
+            android:name=".TampilMahasiswaActivity"
+            android:exported="false"
+            android:label="Mahasiswa" />
+        <activity
+            android:name=".MenuActivity"
+            android:exported="false"
+            android:label="Menu" />
         <activity
             android:name=".MainActivity"
             android:exported="true">
